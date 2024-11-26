@@ -16,6 +16,10 @@ repositories {
 }
 
 dependencies {
+    // jdbc driver
+    implementation("org.postgresql:postgresql:42.5.0")
+
+
     // Use JUnit test framework.
     implementation ("org.springframework.boot:spring-boot-starter-web:2.7.0")
     testImplementation(libs.junit)

@@ -27,7 +27,7 @@ public class App {
         List<String> cars = new ArrayList<>();
 
         // Corrected SQL query with a placeholder for the "make" parameter
-        String query = "SELECT * FROM public.cars WHERE make = ?";
+        String query = "select * from public.cars c where make = ?";
 
         try (Connection connection = DriverManager.getConnection(DB_URL, USER, PASS);
              PreparedStatement statement = connection.prepareStatement(query)) {
